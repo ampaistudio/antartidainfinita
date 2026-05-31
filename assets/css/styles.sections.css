@@ -1,0 +1,414 @@
+.historia {
+  background: linear-gradient(180deg, var(--bg-soft), var(--bg-body));
+}
+
+.travesia,
+.equipo,
+.embajadores,
+.sponsors {
+  background: color-mix(in srgb, var(--bg-body) 85%, var(--bg-soft));
+}
+
+.causa,
+.prensa,
+.instagram,
+.cta-final {
+  background: linear-gradient(135deg, var(--bg-body), var(--bg-soft));
+}
+
+.historia-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.historia-quote,
+.historia-signature,
+.historia-grid p,
+.causa p,
+.caad-box,
+.team-bio,
+.press-summary,
+.press-meta {
+  color: var(--txt-soft);
+}
+
+.historia-quote {
+  border-left: 3px solid;
+  border-image: var(--gradient-brand) 1;
+  font-family: var(--font-display);
+  font-size: calc(1.6rem * var(--font-scale));
+  line-height: 1.45;
+  padding-left: 1.4rem;
+}
+
+.stats-grid,
+.team-grid,
+.press-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 2.5rem;
+}
+
+.team-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2.2rem;
+}
+
+.press-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2.2rem;
+}
+
+.stat,
+.team-card,
+.press-card,
+.ruta-box {
+  background: var(--bg-card);
+  border: 1px solid var(--bd-card);
+}
+
+.stat {
+  padding: 1.8rem 1rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-condensed);
+  font-size: calc(3rem * var(--font-scale));
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  color: var(--txt-faint);
+  font-size: calc(0.74rem * var(--font-scale));
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ruta-box {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+
+.ruta-point {
+  align-items: center;
+  display: flex;
+  gap: 0.9rem;
+}
+
+.ruta-dot {
+  background: var(--txt-brand);
+  border-radius: 999px;
+  height: 12px;
+  width: 12px;
+}
+
+.ruta-dot.highlight {
+  background: var(--c-gold-500);
+  height: 16px;
+  width: 16px;
+}
+
+.ruta-connector {
+  background: linear-gradient(180deg, var(--txt-brand), transparent);
+  height: 24px;
+  margin: 0.35rem 0 0.35rem 5px;
+  width: 2px;
+}
+
+.ruta-name {
+  font-family: var(--font-condensed);
+  font-size: calc(0.95rem * var(--font-scale));
+  letter-spacing: 0.05em;
+}
+
+.ruta-coord {
+  color: var(--txt-faint);
+  font-size: calc(0.74rem * var(--font-scale));
+}
+
+.ruta-desc ul {
+  margin-top: 1rem;
+  padding-left: 1.1rem;
+}
+
+.ruta-desc li {
+  color: var(--txt-muted);
+  font-size: calc(0.9rem * var(--font-scale));
+  margin-bottom: 0.35rem;
+}
+
+.causa-inner {
+  max-width: 840px;
+  text-align: center;
+}
+
+.causa-big {
+  font-family: var(--font-display);
+  font-size: calc(2.6rem * var(--font-scale));
+  line-height: 1.3;
+  margin-bottom: 1.1rem;
+}
+
+.caad-box {
+  background: var(--bg-card-strong);
+  border: 1px solid var(--bd-card);
+  margin-top: 1.8rem;
+  padding: 1.6rem 1.8rem;
+}
+
+.team-card {
+  padding: 1.5rem;
+}
+
+.team-number {
+  color: var(--txt-faint);
+  font-family: var(--font-condensed);
+  font-size: calc(0.7rem * var(--font-scale));
+  letter-spacing: 0.14em;
+  margin-bottom: 1rem;
+}
+
+.team-head {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 72px 1fr;
+  margin-bottom: 1rem;
+}
+
+.team-photo {
+  border: 1px solid var(--bd-card);
+  border-radius: 999px;
+  height: 72px;
+  object-fit: cover;
+  width: 72px;
+}
+
+.team-name {
+  font-family: var(--font-condensed);
+  font-size: calc(1.4rem * var(--font-scale));
+  letter-spacing: 0.04em;
+}
+
+.team-role {
+  color: var(--txt-brand);
+  font-size: calc(0.78rem * var(--font-scale));
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.team-bio {
+  font-size: calc(0.95rem * var(--font-scale));
+  line-height: 1.75;
+}
+
+.press-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  padding: 1.5rem;
+}
+
+.press-title {
+  font-family: var(--font-display);
+  font-size: calc(1.2rem * var(--font-scale));
+  margin-bottom: 0.7rem;
+}
+
+.press-meta {
+  font-size: calc(0.78rem * var(--font-scale));
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.press-summary {
+  font-size: calc(0.95rem * var(--font-scale));
+  line-height: 1.7;
+}
+
+.press-link {
+  color: var(--txt-brand);
+  font-family: var(--font-condensed);
+  font-size: calc(0.8rem * var(--font-scale));
+  letter-spacing: 0.08em;
+  margin-top: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.instagram-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.instagram-grid .instagram-media {
+  background: var(--bg-card);
+  border: 1px solid var(--bd-card);
+  margin: 0;
+  min-height: 460px;
+  width: 100%;
+}
+
+.cta-final h2 {
+  font-family: var(--font-display);
+  font-size: calc(3.8rem * var(--font-scale));
+  line-height: 1.06;
+  margin-bottom: 0.8rem;
+}
+
+.launch-badge {
+  border: 1px solid rgb(var(--rgb-gold) / 0.45);
+  display: inline-flex;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.launch-badge span {
+  color: var(--c-gold-500);
+  font-family: var(--font-condensed);
+  font-size: calc(0.76rem * var(--font-scale));
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sponsor-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sponsor-track {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.sponsor-track.is-animated {
+  animation: sponsor-marquee 18s linear infinite;
+  width: max-content;
+}
+
+.sponsor-item {
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--bd-card);
+  display: inline-flex;
+  flex: 0 0 220px;
+  height: 92px;
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.sponsor-item img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+@keyframes sponsor-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+footer {
+  background: color-mix(in srgb, var(--bg-soft) 85%, var(--bg-body));
+  border-top: 1px solid var(--bd-soft);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: var(--font-condensed);
+  font-size: calc(1.2rem * var(--font-scale));
+  letter-spacing: 0.18em;
+  margin-bottom: 0.4rem;
+}
+
+.footer-tagline,
+.powered-by {
+  color: var(--txt-faint);
+  font-size: calc(0.78rem * var(--font-scale));
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.footer-social a {
+  color: var(--txt-muted);
+  font-size: calc(1.3rem * var(--font-scale));
+}
+
+.powered-by a {
+  color: var(--txt-brand);
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .site-nav { grid-template-columns: auto auto 1fr; }
+  .menu-toggle {
+    background: var(--bg-card);
+    border: 1px solid var(--bd-card);
+    color: var(--txt-main);
+    display: inline-flex;
+    min-height: 2rem;
+    min-width: 2.4rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .nav-links {
+    background: color-mix(in srgb, var(--bg-body) 92%, transparent);
+    border: 1px solid var(--bd-card);
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    left: 1.2rem;
+    padding: 1rem;
+    position: absolute;
+    right: 1.2rem;
+    top: 4.5rem;
+  }
+  .nav-links.is-open { display: flex; }
+  .nav-controls { justify-content: flex-end; }
+}
+
+@media (max-width: 900px) {
+  .hero h1 { font-size: calc(3.2rem * var(--font-scale)); }
+  .hero-tagline { font-size: calc(1.3rem * var(--font-scale)); }
+  .historia-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .team-grid { grid-template-columns: 1fr; }
+  .press-grid { grid-template-columns: 1fr; }
+  .instagram-grid { grid-template-columns: 1fr; }
+  .ruta-box { grid-template-columns: 1fr; }
+  .cta-final h2 { font-size: calc(2.8rem * var(--font-scale)); }
+}
+
+@media (max-width: 620px) {
+  .site-nav { padding: 0.8rem 1rem; }
+  .nav-logo { font-size: calc(0.9rem * var(--font-scale)); }
+  .nav-controls { gap: 0.4rem; }
+  .chip { min-width: 2rem; padding: 0.3rem 0.4rem; }
+  .hero-logo-wrap { height: 180px; width: 180px; }
+  .hero { padding-top: 7rem; }
+  .section { padding: calc(3.8rem * var(--font-scale)) 1rem; }
+  .sponsor-item { flex-basis: 180px; height: 80px; }
+}
